@@ -5,7 +5,7 @@ const CardWrapper = styled.div`
   width: 100%;
   height: 200px;
   background-color: #ffffff;
-  border-radius: 15px;
+  border-radius: 16px;
   margin: auto;
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -15,6 +15,7 @@ const CardWrapper = styled.div`
     background-color: #c4c4c4;
     height: 80%;
     width: 80%;
+    border-radius: 16px;
   }
 
   & .right {

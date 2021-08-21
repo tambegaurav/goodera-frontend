@@ -9,7 +9,7 @@ const Container = styled.div`
 
   width: 70%;
   gap: 50px;
-  margin: 50px auto;
+  margin: 100px auto;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -21,13 +21,11 @@ const HomePage = () => {
   return (
     <div>
       <NavBar />
+
       <Container>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {new Array(15).fill(1).map((el, idx) => (
+          <Card key={idx} />
+        ))}
       </Container>
     </div>
   );

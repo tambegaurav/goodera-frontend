@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import SearchBar from "../../Components/SearchBar";
 
 const MainWrapper = styled.div`
   width: 100%;
-  height: 200px;
+  height: 250px;
   background: rgb(94, 122, 223);
   background: linear-gradient(
     90deg,
@@ -50,8 +51,6 @@ const Title = styled.div`
   }
 `;
 
-const SearchBar = styled.input``;
-
 const NavBar = () => {
   return (
     <MainWrapper>
@@ -72,7 +71,7 @@ const NavBar = () => {
         <h1>Find Your Dream Job</h1>
         <p>Browse through thousands of full-time and part-time jobs near you</p>
       </Title>
-      {/* <SearchBar></SearchBar> */}
+      <SearchBar />
     </MainWrapper>
   );
 };
