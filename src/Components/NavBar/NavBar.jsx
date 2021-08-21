@@ -26,8 +26,13 @@ const NavBarWrapper = styled.div`
     display: flex;
     flex-direction: row;
     gap: 30px;
-    color: #f5f5f5;
+    color: #ffffff;
     cursor: pointer;
+  }
+
+  & .active {
+    border-bottom: 2px solid #fff;
+    border-bottom-width: 2px;
   }
 `;
 
@@ -37,11 +42,11 @@ const Title = styled.div`
   justify-content: start;
   width: 70%;
   margin: auto;
-  color: #f5f5f5;
+  color: #ffffff;
 
   & h1 {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 38px;
   }
 `;
 
@@ -54,7 +59,7 @@ const NavBar = () => {
         <div className="left-links">
           <img src="/images/Logo.png" className="logo" alt="" />
 
-          <h3>Find Jobs</h3>
+          <h3 className="active">Find Jobs</h3>
           <h3>Upskill Yourself</h3>
         </div>
 
