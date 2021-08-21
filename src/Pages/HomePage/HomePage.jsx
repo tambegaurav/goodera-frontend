@@ -23,7 +23,7 @@ const HomePage = () => {
       <NavBar />
 
       <Container>
-        {new Array(15).fill(1).map((el, idx) => (
+        {new Array(7).fill(1).map((el, idx) => (
           <Card key={idx} />
         ))}
       </Container>
